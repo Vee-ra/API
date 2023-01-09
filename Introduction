@@ -1,0 +1,23 @@
+Application Programe Interface
+I - Interface
+    is like a radio volume trimmer, music play button from any media player. we can know what if we click play button(like method - onclick even listener in app develpment) do 
+    but the implementation behind the play button we're not awae of it.
+
+Remote APIs - REST - Representational State Transfer used for creating web services. 
+  REST API - is easy way of accessing web services simple and flexible way without any processig.
+
+How web works:
+  let's assume your computer's IE browser as a clinet and going to connect server using URL
+  URL - Universal Resource Locator URI - Universal Resource Identifier.
+  here We mentioned shema portion as 'http'
+  in query string after '?' mark we can able to send our request to server by GET method
+  
+  browser - http request (generaly its a GET - only used to send request and receive a response data)
+  HTTP - Hyper Test Tansfer Protocol - originaaly it was designed as a Stateless protocol
+  
+  POST: senda data to server to modify data in the server and gets response from server
+  classic example is "Forms"
+  
+
+ 
+    
