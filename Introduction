@@ -24,11 +24,21 @@ User: vsvel.tsi
 PWD: 321-APItest
 Twilio Ph: +17707626563
 paste below in command line to send message.
+POST Request:
 curl.exe -X POST "https://api.twilio.com/2010-04-01/Accounts/AC288f0151526b8762193191a966a007f8/Messages.json" ^
   --data-urlencode "Body=Hello from Twilio" ^
   --data-urlencode "From=+17707626563" ^
   --data-urlencode "To=+916383917214" ^
   -u "AC288f0151526b8762193191a966a007f8:%TWILIO_AUTH_TOKEN%"
+ Response:
+ {"body": "Sent from your Twilio trial account - Hello from Twilio", "num_segments": "1", "direction": "outbound-api", "from": "+17707626563", "date_updated": "Sat, 21 Jan 2023 17:30:35 +0000", "price": null, "error_message": null, "uri": "/2010-04-01/Accounts/AC288f0151526b8762193191a966a007f8/Messages/SM3adb1fb40a6317e4e56965822672c1d7.json", "account_sid": "AC288f0151526b8762193191a966a007f8", "num_media": "0", "to": "+916383917214", "date_created": "Sat, 21 Jan 2023 17:30:35 +0000", "status": "queued", "sid": "SM3adb1fb40a6317e4e56965822672c1d7", "date_sent": null, "messaging_service_sid": null, "error_code": null, "price_unit": "USD", "api_version": "2010-04-01", "subresource_uris": {"media": "/2010-04-01/Accounts/AC288f0151526b8762193191a966a007f8/Messages/SM3adb1fb40a6317e4e56965822672c1d7/Media.json"}}
+  
+ GET Response:
+ curl "https://api.twilio.com/2010-04-01/Accounts/AC288f0151526b8762193191a966a007f8/Messages.json" X GET \ -u AC288f0151526b8762193191a966a007f8:e20b9a7d30b852db6fb840f03db06dac
+ Response:
+ {"first_page_uri": "/2010-04-01/Accounts/AC288f0151526b8762193191a966a007f8/Messages.json?PageSize=50&Page=0", "end": 0, "previous_page_uri": null, "messages": [{"body": "Sent from your Twilio trial account - Hello from Twilio", "num_segments": "1", "direction": "outbound-api", "from": "+17707626563", "date_updated": "Sat, 21 Jan 2023 17:30:42 +0000", "price": "-0.04900", "error_message": null, "uri": "/2010-04-01/Accounts/AC288f0151526b8762193191a966a007f8/Messages/SM3adb1fb40a6317e4e56965822672c1d7.json", "account_sid": "AC288f0151526b8762193191a966a007f8", "num_media": "0", "to": "+916383917214", "date_created": "Sat, 21 Jan 2023 17:30:35 +0000", "status": "delivered", "sid": "SM3adb1fb40a6317e4e56965822672c1d7", "date_sent": "Sat, 21 Jan 2023 17:30:35 +0000", "messaging_service_sid": null, "error_code": null, "price_unit": "USD", "api_version": "2010-04-01", "subresource_uris": {"media": "/2010-04-01/Accounts/AC288f0151526b8762193191a966a007f8/Messages/SM3adb1fb40a6317e4e56965822672c1d7/Media.json", "feedback": "/2010-04-01/Accounts/AC288f0151526b8762193191a966a007f8/Messages/SM3adb1fb40a6317e4e56965822672c1d7/Feedback.json"}}], "uri": "/2010-04-01/Accounts/AC288f0151526b8762193191a966a007f8/Messages.json?PageSize=50&Page=0", "page_size": 50, "start": 0, "next_page_uri": null, "page": 0}curl: (6) Could not resolve host: X
+curl: (6) Could not resolve host: GET
+curl: (6) Could not resolve host: \
 
 Also try with no code application demo by giving receivers mobile number to receive SMS - Done.
 
