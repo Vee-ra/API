@@ -18,6 +18,8 @@ How web works:
   POST: senda data to server to modify data in the server and gets response from server
   classic example is "Forms"
   
+RESTful API constarint Scavenger hunt
+  
 
  
     
