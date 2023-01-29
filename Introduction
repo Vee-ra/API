@@ -42,5 +42,7 @@ curl: (6) Could not resolve host: \
 
 Also try with no code application demo by giving receivers mobile number to receive SMS - Done.
 
+SDKs - messages send to vs code console using twilio act and javascript SDK pkg installed on vscode.
+
  
     
